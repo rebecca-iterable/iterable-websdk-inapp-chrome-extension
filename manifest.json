@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "My Extension",
+  "version": "1.0",
+  "background":{
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  
+"content_scripts": [
+    {
+      "matches": ["*://*.amazon.com/*"],
+      "js": [
+        "iterablewebsdk.js", 
+        "content/rakuten.js"       
+      ]
+    }
+],
+  "icons": {
+    "32": "icons/32.png",
+    "72": "icons/72.png",
+    "128": "icons/128.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["iterablewebsdk.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
