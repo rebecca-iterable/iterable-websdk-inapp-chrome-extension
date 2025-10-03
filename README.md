@@ -1,2 +1,4 @@
 # iterable-websdk-inapp-chrome-extension
-Display in-app messages using Chrome Extension via Iterable Web SDK
+Display in-app/in-browser messages using Chrome Extension via Iterable Web SDK
+
+
