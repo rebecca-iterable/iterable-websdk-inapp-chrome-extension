@@ -1,0 +1,33 @@
+{
+  "name": "itbl-websdk-app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+  "build": "webpack --config webpack.config.js",
+  "start": "webpack serve --config webpack.config.js",
+  "clean": "rimraf dist",
+  "itbl:build": "esbuild content/rakuten.js --bundle --outfile=dist/rakuten-bundle.js",
+  "itbl:watch": "esbuild content/rakuten.js --bundle --outfile=dist/rakuten-bundle.js --watch"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@iterable/web-sdk": "^1.2.0",
+    "css-loader": "^7.1.2",
+    "esbuild": "^0.27.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "http-server": "^14.1.1",
+    "rimraf": "^6.0.1",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.2",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.102.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "type": "commonjs"
+}
